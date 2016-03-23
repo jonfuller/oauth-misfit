@@ -36,5 +36,9 @@ class MisfitTest < Sinatra::Base
     
     return auth.to_s
   end
+
+  get '/auth/failure' do
+    p request.env
+  end
 end
 
